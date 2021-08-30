@@ -1,0 +1,78 @@
+.tricksterCalc{
+    margin: 3%;
+}
+
+.semOpt > h4, .semDept > h4 , .semSubject > h4 , .semGrades > h4, .semGrades > div > h4{
+    text-transform: uppercase;
+    color: #2b2b2b;
+    opacity: 0.7;
+    margin-bottom: 2%;
+}
+
+.semOpt div{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.semOpt label{
+    margin-left: 2%;
+    margin-right: 2%;
+    color: #2b2b2b;
+    opacity: 0.7;
+    font-weight: bold;
+}
+
+.semGrades .rules{
+    color: red;
+    opacity: 1;
+    text-decoration: underline;
+}
+
+.semGrades div{
+    display: flex;
+    margin-bottom: 3%;
+}
+
+.semGrades select{
+    margin: auto 5%;
+    padding: 2% 4%;
+}
+
+.semGrades > div > h4{
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.semCalc{
+    margin: 10% 0%;
+}
+
+.semCalc > div{
+    text-align: center;
+}
+
+.semCalc > div > button{
+    padding: 3%;
+    font-weight: bold;
+    color: #2b2b2b;
+    font-size: 15px;
+}
+
+.semGPA{
+    display: flex;
+    justify-content: center;
+}
+
+.semGPA > h3{
+    color: red;
+    text-transform: uppercase;
+}
+
+.semGPA > div{
+    width: 60px;
+    height: 30px;
+    background-color: #fff;
+    border: 1px solid #2b2b2b;
+    border-radius: 2px;
+    margin: auto 5%;
+}
