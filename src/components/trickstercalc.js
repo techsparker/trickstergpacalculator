@@ -114,7 +114,7 @@ function TricksterCalc() {
         </div>
 
         <div className="semGPA">
-            <h3>Your GPA : </h3>
+            <h4>Your GPA : </h4>
             <div></div>
         </div>
 
