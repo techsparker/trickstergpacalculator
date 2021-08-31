@@ -6,7 +6,11 @@ function Header() {
       <div> 
         <html>
         <body>
-        <h1 style={{textAlign:"center"}}><b>TRICKSTER</b></h1>
+        <font>
+        <h1>style={{textAlign:"center"}}{{fontFamily:"segoe-ui"}}<b>TRICKSTER</b></h1>
+        <h2>style={{textAlign:"center"}}{{fontFamily:"Segoe-ui"}}<b>GPA</b></h2>
+        <h5>style={{textAlign:"center"}}{{fontFamily:"Segoe-ui"}}<b>CALCULATOR</b></h5>
+        </font>
         </body>
         </html>
          
