@@ -22,7 +22,7 @@ function TricksterCalc() {
         </div>
 
         <div className="semDept">
-            <h4>Select The Department</h4>
+            <h4>Choose your Department</h4>
             <select>
                 <option value="">None</option>
                 <option value="CSE">CSE (Computer Science And Engineering)</option>

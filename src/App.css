@@ -1,3 +1,15 @@
+/*header*/
+.header {
+    text-align: center;
+    color:black ;
+    font-family: 'Segoe UI';
+}
+.header2 {
+    color: red;
+}
+
+/* calc */
+
 .tricksterCalc{
     margin: 3%;
 }
@@ -75,4 +87,14 @@
     border: 1px solid #2b2b2b;
     border-radius: 2px;
     margin: auto 5%;
+}
+/* aboutus */
+
+.general {
+    text-align: left;
+    color: black;
+    font-family: 'Segoe UI';
+}
+.general2 {
+    color: red;
 }
