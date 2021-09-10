@@ -4,35 +4,39 @@ const CSE = [
     [
         {
             subject_name: "Communicative English" ,
-            credits: 0
+            credits: 4
         },
         {
             subject_name: "Engineering Mathematics - I",
-            credits: 0
+            credits: 4
+        },
+        {
+            subject_name: "Engineering Physics",
+            credits: 3
         },
         {
             subject_name: "Engineering Chemistry",
-            credits: 0
+            credits: 3
         },
         {
             subject_name: "Problem Solving And Python Programming",
-            credits: 0
+            credits: 3
         },
         {
             subject_name: "Engineering Graphics",
-            credits: 0
+            credits: 4
         },
         {
             subject_name: "Problem Solving And Python Programming Laboratory",
-            credits: 0
+            credits: 2
         },
         {
             subject_name: "Physics Laboratory",
-            credits: 0
+            credits: 2
         },
         {
             subject_name: "Chemistry Laboratory",
-            credits: 0
+            credits: 2
         }
     ],
     [

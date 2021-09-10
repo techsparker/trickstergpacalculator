@@ -1,10 +1,13 @@
 import React , { useEffect, useState } from "react";
 import {CSE} from "./dept";
 
+
 function TricksterCalc() {  
     const [dept , setDept] = useState("None");
     const [sem , setSem] = useState("1");
-    const [sub , setSub] = useState({});
+    const [semSub , setSemSub] = useState([]);
+    const [GPAPoints, setGPAPoints] = useState(0);
+
     const changeDept = (e) => {
         if(e.target.value === "CSE")
             setDept(CSE);
@@ -16,24 +19,94 @@ function TricksterCalc() {
 
     useEffect(() => {
         console.log(dept[0]);
+        // let semSubList = []
+        // for(let i=0;i<dept[0].length; i++){
+        //     semSubList.push(dept[0][i].subject_name);
+        // }
+        // setSemSub(semSubList);
     } , [dept])
 
     useEffect(() => {
         console.log(sem);
     } , [sem])
 
-    const changeMarks = (e,subject) => {
-        let marks = sub;
-        console.log(e.target.value);
-        marks = {
-            ...marks, subject
+    const changeMarks = (e,subject,id) => {
+        let marks = semSub , flag = 0, data = { ...subject }
+        data.grade = e.target.value;
+        if(marks.length < id){
+            e.target.value = "O";
+            return alert("Text One By One")
         }
-        console.log(marks)
+        if(marks.length !== id){
+            for(let i=0;i<dept[sem - 1].length;i++){
+                if(dept[sem - 1][i].subject_name == marks[id].subject_name){
+                    //Change Grade
+                    marks[id].grade = e.target.value;
+                    flag=1;
+                }
+            }
+        }
+        if(flag == 0){
+            marks.push(data);
+        }
+        setSemSub(marks);
+        console.log(marks);
     }
-    
-    useEffect(() => {
-        console.log(sub)
-    } , [sub])
+
+    const calculateGPA = () => {
+        let marks = semSub , flag=0;
+        console.log(marks.length);
+        if(marks.length < 8){
+            for(let i=0;i<dept[sem - 1].length;i++){
+                flag=0;
+                for(let j=0; j<marks.length; j++){
+                    if(dept[sem - 1][i].subject_name == marks[j].subject_name){
+                        console.log("Executes");
+                        flag=1;
+                        break;
+                    }   
+                }
+                if(flag == 0){
+                    let data = dept[sem - 1][i];
+                    data.grade = "O";
+                    marks.push(data);
+                }
+
+            }
+        }
+        console.log(marks);
+        let subTotal = 0 , creditTotal = 0;
+        for(let i=0;i<marks.length; i++){
+            let subCredits = 0;
+            let grade = marks[i].grade;
+            let credits = marks[i].credits;
+            switch(grade){
+                case "O":
+                    subCredits = 10;
+                    break;
+                case "A+":
+                    subCredits = 9;
+                    break;
+                case "A":
+                    subCredits = 8;
+                    break;
+                case "B+":
+                    subCredits = 7;
+                    break;
+                case "B":
+                    subCredits = 6;
+                    break;
+                default:
+                    subCredits = 0;
+            } 
+            console.log(subCredits)
+            subTotal += credits * subCredits;
+            creditTotal += credits;
+        }
+        let GPA = subTotal / creditTotal;
+        GPA = GPA.toFixed(2);
+        setGPAPoints(GPA);
+    }
 
 
     return(
@@ -161,11 +234,11 @@ function TricksterCalc() {
             </div> : 
             <div>   
                 { 
-                    dept[sem].map((subject , id) => {
+                    dept[sem - 1].map((subject , id) => {
                         return (
-                            <div>
+                            <div key={id}>
                                 <h4>{subject.subject_name}</h4>
-                                <select onChange={(e) => changeMarks(e,subject)}>
+                                <select onChange={(e) => changeMarks(e,subject,id)}>
                                     <option value="O">O</option>
                                     <option value="A+">A+</option>
                                     <option value="A">A</option>
@@ -182,12 +255,12 @@ function TricksterCalc() {
         </div>
 
         <div className="semCalc">
-            <div><button type="button">CALCULATE</button></div>
+            <div><button type="button" onClick={() => calculateGPA()}>CALCULATE</button></div>
         </div>
 
         <div className="semGPA">
             <h4>Your GPA : </h4>
-            <div></div>
+            <div><p>{GPAPoints}</p></div>
         </div>
 
       </div>
