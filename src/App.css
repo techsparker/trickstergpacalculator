@@ -51,8 +51,9 @@ h3{
     text-decoration: underline;
 }
 
-.semGrades div{
-    display: flex;
+.semGrades > div div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     margin-bottom: 3%;
 }
 

@@ -1,0 +1,150 @@
+import React from "react";
+
+const CSE = [
+    [
+        {
+            subject_name: "Communicative English" ,
+            credits: 0
+        },
+        {
+            subject_name: "Engineering Mathematics - I",
+            credits: 0
+        },
+        {
+            subject_name: "Engineering Chemistry",
+            credits: 0
+        },
+        {
+            subject_name: "Problem Solving And Python Programming",
+            credits: 0
+        },
+        {
+            subject_name: "Engineering Graphics",
+            credits: 0
+        },
+        {
+            subject_name: "Problem Solving And Python Programming Laboratory",
+            credits: 0
+        },
+        {
+            subject_name: "Physics Laboratory",
+            credits: 0
+        },
+        {
+            subject_name: "Chemistry Laboratory",
+            credits: 0
+        }
+    ],
+    [
+        {
+            subject_name: "Technical English" ,
+            credits: 0
+        },
+        {
+            subject_name: "Engineering Mathematics - II",
+            credits: 0
+        },
+        {
+            subject_name: "Physics For Information Science",
+            credits: 0
+        },
+        {
+            subject_name: "Basic Electrical And Measurement Engineering",
+            credits: 0
+        },
+        {
+            subject_name: "Environmental Science And Engineering",
+            credits: 0
+        },
+        {
+            subject_name: "Programming In C",
+            credits: 0
+        },
+        {
+            subject_name: "Engineering Pracices Laboratory",
+            credits: 0
+        },
+        {
+            subject_name: "C Programming Laboratory",
+            credits: 0
+        }
+    ],
+    [
+        {
+            subject_name: "Discrete Mathematics" ,
+            credits: 0
+        },
+        {
+            subject_name: "Digital Principles And Design",
+            credits: 0
+        },
+        {
+            subject_name: "Data Structures",
+            credits: 0
+        },
+        {
+            subject_name: "Object Oriented Programming",
+            credits: 0
+        },
+        {
+            subject_name: "Communication Engineering",
+            credits: 0
+        },
+        {
+            subject_name: "Data Structures Laboratory",
+            credits: 0
+        },
+        {
+            subject_name: "Object Oriented Programming Laboratory",
+            credits: 0
+        },
+        {
+            subject_name: "Digital Systems Laboratory",
+            credits: 0
+        },
+        {
+            subject_name: "Interpersonal Skills / Listening & Speaking",
+            credits: 0
+        }
+    ],
+    [
+        {
+            subject_name: "Probability And Queueing Theory" ,
+            credits: 0
+        },
+        {
+            subject_name: "Computer Architecture",
+            credits: 0
+        },
+        {
+            subject_name: "Database Management Systems",
+            credits: 0
+        },
+        {
+            subject_name: "Design And Analysis Of Algorithms",
+            credits: 0
+        },
+        {
+            subject_name: "Operating Systems",
+            credits: 0
+        },
+        {
+            subject_name: "Software Engineering",
+            credits: 0
+        },
+        {
+            subject_name: "Database Management Systems Laboratory",
+            credits: 0
+        },
+        {
+            subject_name: "Operating Systems Laboratory",
+            credits: 0
+        },
+        {
+            subject_name: "Advanced Reading And Writing",
+            credits: 0
+        }
+    ],
+]
+
+export {CSE};
