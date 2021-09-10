@@ -3,7 +3,8 @@ import React from "react";
 function AboutUs() {  
   
     return(
-      <div className="general3"> 
+      <div className="general3">
+        <div className="general1"></div> 
       
       <h2 className="general"><b>GENERAL:</b></h2>
       <h4 className="general2"><b>WHAT IS GPA?</b></h4>
