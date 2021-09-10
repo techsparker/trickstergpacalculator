@@ -1,6 +1,7 @@
 /*header*/
 
 .header {
+    margin-top: 0%;
     text-align: center;
     color:black ;
     font-family: 'Segoe UI';
@@ -12,6 +13,14 @@
 .header3 {
     border-bottom: 1px solid black;
     background-color: #9DEFED ;
+
+}
+.header4 {
+    width: 100px;
+    position: absolute;
+    position: relative;
+    bottom: 130px;
+    left:600px;
 }
 h1{
     letter-spacing: 10px;
@@ -23,7 +32,8 @@ h3{
 /* calc */
 
 .tricksterCalc{
-    margin: 3%;
+    padding: 3%;
+    background-color: lightgrey;
 }
 
 .semOpt > h4, .semDept > h4 , .semSubject > h4 , .semGrades > h4, .semGrades > div > h4{
@@ -112,15 +122,19 @@ h3{
     padding: 4%;
 }
 /* aboutus */
-
 .general {
+    margin-top: 0%;
+    padding: 2%;
     text-align: left;
     color: black;
     font-family: 'Segoe UI';
 }
 .general2 {
     color: red;
+    margin-bottom: 0%;
+    padding: 2%;
 }
 .general3 {
     border-top: 1px solid black;
+    background-color:#9DEFED;
 }
