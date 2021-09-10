@@ -1,17 +1,18 @@
 /*header*/
 
-
 .header {
     text-align: center;
     color:black ;
     font-family: 'Segoe UI';
-    
 }
 .header2 {
     color: red;
     font-size: 32px;
 }
-
+.header3 {
+    border-bottom: 1px solid black;
+    background-color: #9DEFED ;
+}
 h1{
     letter-spacing: 10px;
 }
@@ -78,8 +79,8 @@ h3{
 .semCalc > div > button{
     padding: 3%;
     font-weight: bold;
-    color: #2b2b2b;
-    background-color: #9BE9E7;
+    color: red;
+    background-color: #9DEFED;
     font-size: 15px;
 }
 
@@ -97,7 +98,7 @@ h3{
 .semGPA > div{
     width: 60px;
     height: 30px;
-    background-color: #fff;
+    background-color: #9DEFED;
     border: 1px solid #2b2b2b;
     border-radius: 2px;
     margin: auto 5%;
@@ -111,4 +112,7 @@ h3{
 }
 .general2 {
     color: red;
+}
+.general3 {
+    border-top: 1px solid black;
 }
