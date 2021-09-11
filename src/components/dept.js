@@ -74,78 +74,206 @@ const CSE = [
     [
         {
             subject_name: "Discrete Mathematics" ,
-            credits: 0
+            credits: 4
         },
         {
             subject_name: "Digital Principles And Design",
-            credits: 0
+            credits: 4
         },
         {
             subject_name: "Data Structures",
-            credits: 0
+            credits: 3
         },
         {
             subject_name: "Object Oriented Programming",
-            credits: 0
+            credits: 3
         },
         {
             subject_name: "Communication Engineering",
-            credits: 0
+            credits: 3
         },
         {
             subject_name: "Data Structures Laboratory",
-            credits: 0
+            credits: 2
         },
         {
             subject_name: "Object Oriented Programming Laboratory",
-            credits: 0
+            credits: 2
         },
         {
             subject_name: "Digital Systems Laboratory",
-            credits: 0
+            credits: 2
         },
         {
             subject_name: "Interpersonal Skills / Listening & Speaking",
-            credits: 0
+            credits: 1
         }
     ],
     [
         {
             subject_name: "Probability And Queueing Theory" ,
-            credits: 0
+            credits: 4
         },
         {
             subject_name: "Computer Architecture",
-            credits: 0
+            credits: 3
         },
         {
             subject_name: "Database Management Systems",
-            credits: 0
+            credits: 3
         },
         {
             subject_name: "Design And Analysis Of Algorithms",
-            credits: 0
+            credits: 3
         },
         {
             subject_name: "Operating Systems",
-            credits: 0
+            credits: 3
         },
         {
             subject_name: "Software Engineering",
-            credits: 0
+            credits: 3
         },
         {
             subject_name: "Database Management Systems Laboratory",
-            credits: 0
+            credits: 2
         },
         {
             subject_name: "Operating Systems Laboratory",
-            credits: 0
+            credits: 2
         },
         {
             subject_name: "Advanced Reading And Writing",
-            credits: 0
+            credits: 1
         }
+    ],
+    [
+        {
+            subject_name: "Algebra And Number Theory",
+            credits:4
+        },
+        {
+            subject_name: "Computer Networks",
+            credits:3
+        },
+        {
+            subject_name: "Microprocessors And Microcontrollers",
+            credits:3
+        },
+        {
+            subject_name: "Theory Of Computation",
+            credits:3
+        },
+        {
+            subject_name: "Object Oriented Analysis And Design",
+            credits:3
+        },
+        {
+            subject_name: "Open Elective I",
+            credits:3
+        },
+        {
+            subject_name: "Microprocessors And Microcontrollers Laboratory",
+            credits:2
+        },
+        {
+            subject_name: "Object Oriented Analysis And Design Laboratory",
+            credits:2
+        },
+        {
+            subject_name: "Networks Laboratory",
+            credits:2
+        }
+    ],
+    [
+        {
+            subject_name: "Internet Programming",
+            credits:3
+        },
+        {
+            subject_name: "Artificial Intelligence",
+            credits:3
+        },
+        {
+            subject_name: "Mobile Computing",
+            credits:3
+        },
+        {
+            subject_name: "Compiler Design",
+            credits:4
+        },
+        {
+            subject_name: "Distributed Systems",
+            credits:3
+        },
+        { 
+            subject_name: "Professional Elective I",
+            credits:3
+        },
+        {
+            subject_name: "Internet Programming Laboratory",
+            credits:2
+        },
+        {
+            subject_name: "Mobile Application Development Laboratory",
+            credits:2
+        },
+        {
+            subject_name: "Mini Project",
+            credits:1
+        },
+        {
+            subject_name: "Professional Communication",
+            credits:1
+        },
+    ],
+    [
+        {
+            subject_name: "Principles Of Management",
+            credits:3
+        },
+        {
+            subject_name: "Cryptography And Network Security",
+            credits:3
+        },
+        {
+            subject_name: "Cloud Computing",
+            credits:3
+        },
+        {
+            subject_name: "Open Elective II",
+            credits:3
+        },
+        {
+            subject_name: "Professional Elective II",
+            credits:3
+        },
+        {
+            subject_name: "Professional Elective III",
+            credits:3
+        },
+        {
+            subject_name: "Cloud Computing Laboratory",
+            credits:2
+        },
+        {
+            subject_name: "Security Laboratory",
+            credits:2
+        }
+    ],
+    [
+        {
+            subject_name: "Professional Elective IV",
+            credits:3
+        },
+        {
+            subject_name: "Professional Elective V",
+            credits:3
+        },
+        {
+            subject_name: "Project Work",
+            credits:10
+        },
     ],
 ]
 
