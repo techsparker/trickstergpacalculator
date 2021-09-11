@@ -170,7 +170,7 @@ function TricksterCalc() {
                 <div>
                     {
                         dept[sem - 1].map((subject , id) => {
-                            return(<p><strong>Subject {id + 1} :</strong> {subject.subject_name} * (credits - {subject.credits})</p>)
+                            return(<p>Subject {id + 1} :<span> {subject.subject_name} * (credits - {subject.credits})</span></p>)
                         })
                     }
                 </div>
