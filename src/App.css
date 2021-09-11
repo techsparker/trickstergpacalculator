@@ -48,6 +48,10 @@ h3{
     margin-bottom: 2%;
 }
 
+.semSubject p > strong , .semGrades div > h4 {
+    text-transform: uppercase;
+}
+
 .semOpt div{
     margin-top: 2%;
     margin-bottom: 2%;

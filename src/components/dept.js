@@ -1,5 +1,3 @@
-import React from "react";
-
 const CSE = [
     [
         {
@@ -42,35 +40,35 @@ const CSE = [
     [
         {
             subject_name: "Technical English" ,
-            credits: 0
+            credits: 4
         },
         {
             subject_name: "Engineering Mathematics - II",
-            credits: 0
+            credits: 4
         },
         {
             subject_name: "Physics For Information Science",
-            credits: 0
+            credits: 3
         },
         {
             subject_name: "Basic Electrical And Measurement Engineering",
-            credits: 0
+            credits: 3
         },
         {
             subject_name: "Environmental Science And Engineering",
-            credits: 0
+            credits: 3
         },
         {
             subject_name: "Programming In C",
-            credits: 0
+            credits: 3
         },
         {
             subject_name: "Engineering Pracices Laboratory",
-            credits: 0
+            credits: 2
         },
         {
             subject_name: "C Programming Laboratory",
-            credits: 0
+            credits: 2
         }
     ],
     [

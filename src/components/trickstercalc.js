@@ -11,6 +11,8 @@ function TricksterCalc() {
     const changeDept = (e) => {
         if(e.target.value === "CSE")
             setDept(CSE);
+        else
+            setDept("None");
     }
     
     const changeSem = (e) => {
@@ -19,61 +21,73 @@ function TricksterCalc() {
 
     useEffect(() => {
         console.log(dept[0]);
-        // let semSubList = []
-        // for(let i=0;i<dept[0].length; i++){
-        //     semSubList.push(dept[0][i].subject_name);
-        // }
-        // setSemSub(semSubList);
+        let marks = [];
+        if(dept !== "None"){
+            for(let i=0;i<dept[sem-1].length;i++){
+                let data =  dept[sem-1][i];
+                data.grade = "O";
+                marks.push(data);
+            }
+        }
+        console.log(marks);
+        setSemSub(marks);
     } , [dept])
 
     useEffect(() => {
         console.log(sem);
+        let marks = [];
+        if(dept !== "None"){
+            for(let i=0;i<dept[sem-1].length;i++){
+                let data =  dept[sem-1][i];
+                data.grade = "O";
+                marks.push(data);
+            }
+        }
+        console.log(marks);
+        setSemSub(marks);
     } , [sem])
 
     const changeMarks = (e,subject,id) => {
         let marks = semSub , flag = 0, data = { ...subject }
         data.grade = e.target.value;
-        if(marks.length < id){
-            e.target.value = "O";
-            return alert("Text One By One")
-        }
-        if(marks.length !== id){
-            for(let i=0;i<dept[sem - 1].length;i++){
-                if(dept[sem - 1][i].subject_name == marks[id].subject_name){
-                    //Change Grade
-                    marks[id].grade = e.target.value;
-                    flag=1;
-                }
+        // if(marks.length < id){
+        //     e.target.value = "O";
+        //     return alert("Text One By One")
+        // }
+        // if(marks.length !== id){
+        for(let i=0;i<dept[sem - 1].length;i++){
+            if(dept[sem - 1][i].subject_name == marks[id].subject_name){
+                marks[id].grade = e.target.value;
+                flag=1;
             }
         }
-        if(flag == 0){
-            marks.push(data);
-        }
+        // }
+        // if(flag == 0){
+        //     marks.push(data);
+        // }
         setSemSub(marks);
         console.log(marks);
     }
 
     const calculateGPA = () => {
         let marks = semSub , flag=0;
-        console.log(marks.length);
-        if(marks.length < 8){
-            for(let i=0;i<dept[sem - 1].length;i++){
-                flag=0;
-                for(let j=0; j<marks.length; j++){
-                    if(dept[sem - 1][i].subject_name == marks[j].subject_name){
-                        console.log("Executes");
-                        flag=1;
-                        break;
-                    }   
-                }
-                if(flag == 0){
-                    let data = dept[sem - 1][i];
-                    data.grade = "O";
-                    marks.push(data);
-                }
+        // if(marks.length < 8){
+        //     for(let i=0;i<dept[sem - 1].length;i++){
+        //         flag=0;
+        //         for(let j=0; j<marks.length; j++){
+        //             if(dept[sem - 1][i].subject_name == marks[j].subject_name){
+        //                 flag=1;
+        //                 break;
+        //             }   
+        //         }
+        //         if(flag == 0){
+        //             let data = dept[sem - 1][i];
+        //             data.grade = "O";
+        //             marks.push(data);
+        //         }
 
-            }
-        }
+        //     }
+        // }
         console.log(marks);
         let subTotal = 0 , creditTotal = 0;
         for(let i=0;i<marks.length; i++){
@@ -104,7 +118,7 @@ function TricksterCalc() {
             creditTotal += credits;
         }
         let GPA = subTotal / creditTotal;
-        GPA = GPA.toFixed(2);
+        GPA = GPA.toFixed(3);
         setGPAPoints(GPA);
     }
 
@@ -156,7 +170,7 @@ function TricksterCalc() {
                 <div>
                     {
                         dept[sem - 1].map((subject , id) => {
-                            return(<p>Subject {id + 1} : {subject.subject_name} * (credits - {subject.credits})</p>)
+                            return(<p><strong>Subject {id + 1} :</strong> {subject.subject_name} * (credits - {subject.credits})</p>)
                         })
                     }
                 </div>
