@@ -6,13 +6,13 @@ function Header() {
     return(
     
       <div className="header3">
-      <h1 className="header"><b>TRICKSTER</b></h1>
-      <h3 className="header header2 "><b>GPA</b></h3>
-      <h5 className="header"><b>CALCULATOR</b></h5>
-      <div>
-      <img className="header4" src={logo} alt="TricksterLogo"></img>
-      <img className="header5" src={logo} alt="TricksterLogo"></img>
-      </div>
+          <h1 className="header"><b>TRICKSTER</b></h1>
+          <div className="flexImage">
+            <img width="100" height="100" src={logo} alt="TricksterLogo"></img>
+            <h3 className="header header2 "><b>GPA</b></h3>
+            <img width="100" height="100" src={logo} alt="TricksterLogo"></img>
+          </div>
+          <h5 className="header"><b>CALCULATOR</b></h5>
       </div>
     )   
   }
