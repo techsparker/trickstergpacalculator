@@ -11,6 +11,7 @@ function Header() {
       <h5 className="header"><b>CALCULATOR</b></h5>
       <div>
       <img className="header4" src={logo} alt="TricksterLogo"></img>
+      <img className="header5" src={logo} alt="TricksterLogo"></img>
       </div>
       </div>
     )   
