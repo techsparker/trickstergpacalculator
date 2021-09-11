@@ -156,7 +156,7 @@ function TricksterCalc() {
                 <div>
                     {
                         dept[sem - 1].map((subject , id) => {
-                            return(<p>{subject.subject_name} * (credits - {subject.credits})</p>)
+                            return(<p>Subject {id + 1} : {subject.subject_name} * (credits - {subject.credits})</p>)
                         })
                     }
                 </div>
@@ -237,7 +237,7 @@ function TricksterCalc() {
                     dept[sem - 1].map((subject , id) => {
                         return (
                             <div key={id}>
-                                <h4>{subject.subject_name}</h4>
+                                <h4>Subject {id+1}</h4>
                                 <select onChange={(e) => changeMarks(e,subject,id)}>
                                     <option value="O">O</option>
                                     <option value="A+">A+</option>

@@ -92,6 +92,7 @@ h3{
     color: red;
     background-color: #9DEFED;
     font-size: 15px;
+    cursor: pointer;
 }
 
 .semGPA{
