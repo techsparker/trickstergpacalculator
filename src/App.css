@@ -17,10 +17,15 @@
 }
 .header4 {
     width: 100px;
-    position: absolute;
     position: relative;
     bottom: 130px;
-    left:600px;
+    left:620px;
+}
+.header5 {
+    width: 100px;
+    position: relative;
+    left:700px;
+    bottom:130px;
 }
 h1{
     letter-spacing: 10px;
