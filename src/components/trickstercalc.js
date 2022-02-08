@@ -1,5 +1,5 @@
 import React , { useEffect, useState } from "react";
-import {CSE} from "./dept";
+import {CSE , ECE , EEE , MECH} from "./dept";
 
 
 function TricksterCalc() {  
@@ -11,6 +11,12 @@ function TricksterCalc() {
     const changeDept = (e) => {
         if(e.target.value === "CSE")
             setDept(CSE);
+        else if(e.target.value === "ECE")
+            setDept(ECE);
+        else if(e.target.value === "EEE")
+            setDept(EEE);
+        else if(e.target.value === "MECH")
+            setDept(MECH);
         else
             setDept("None");
     }
